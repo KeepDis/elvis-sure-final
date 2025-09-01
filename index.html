@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvis Coder - Port Harcourt Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Navbar -->
+    <nav class="p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-sky-400">Elvis Coder</a>
+           
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center justify-center p-6 bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 1)), url('https://placehold.co/1920x1080/0d1117/304052?text=Code');">
+        <div class="text-center max-w-4xl">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white">
+                Building the Future, One Line of Code at a Time.
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-400 mb-8">
+                I'm a dedicated Port Harcourt Developer bringing innovative ideas to life through code.
+            </p>
+            <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg">
+                Let's Build Something Great
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 p-6">
+        <div class="container mx-auto text-center md:flex items-center md:text-left gap-12 max-w-5xl">
+            <div class="flex-shrink-0 mb-8 md:mb-0">
+                <img src="https://placehold.co/300x300/171f2a/d1d5db?text=Elvis" alt="Elvis Coder" class="rounded-full mx-auto md:mx-0 w-48 h-48 sm:w-64 sm:h-64 object-cover border-4 border-sky-500 shadow-xl">
+            </div>
+            <div class="md:text-left">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
+                <p class="text-gray-400 leading-relaxed text-base sm:text-lg">
+                    My name is Elvis, and I'm a 13-year-old male developer from Rivers State, Nigeria. I'm passionate about technology and solving problems with code. My journey as a developer began here in Port Harcourt, and I'm constantly learning new skills to build innovative and impactful projects.
+                </p>
+                <p class="text-gray-400 mt-4 leading-relaxed text-base sm:text-lg">
+                    I believe in clean, efficient code and creating beautiful user experiences. Whether it's a website, a mobile app, or a simple script, my goal is to deliver solutions that are both functional and elegant.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 p-6 bg-gray-800">
+        <div class="container mx-auto text-center max-w-5xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-xl hover:bg-sky-500 transition-colors cursor-pointer">
+                    <span class="text-4xl mb-4 block">💻</span>
+                    <h3 class="text-xl font-semibold">Web Development</h3>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-xl hover:bg-sky-500 transition-colors cursor-pointer">
+                    <span class="text-4xl mb-4 block">📱</span>
+                    <h3 class="text-xl font-semibold">Mobile Apps</h3>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-xl hover:bg-sky-500 transition-colors cursor-pointer">
+                    <span class="text-4xl mb-4 block">🎨</span>
+                    <h3 class="text-xl font-semibold">UI/UX Design</h3>
+                </div>
+                <div class="p-6 bg-gray-700 rounded-lg shadow-xl hover:bg-sky-500 transition-colors cursor-pointer">
+                    <span class="text-4xl mb-4 block">🤖</span>
+                    <h3 class="text-xl font-semibold">Automation</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 p-6">
+        <div class="container mx-auto text-center max-w-3xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-lg text-gray-400 mb-8">
+                I am always open to new opportunities and collaborations. Feel free to reach out and say hello!
+            </p>
+            <button id="contactBtn" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg">
+                Get in Touch
+            </button>
+            <div id="messageBox" class="mt-8 p-4 bg-gray-800 rounded-md border border-gray-700 hidden">
+                <p>You can reach me at: <a href="mailto:elviscoder@email.com" class="text-sky-400 underline">elviscoder@email.com</a></p>
+                <button onclick="document.getElementById('messageBox').style.display='none'" class="mt-2 text-gray-400 hover:text-gray-200">Close</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center text-gray-500">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Elvis Coder. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-white transition-colors">GitHub</a>
+                <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+                <a href="#" class="hover:text-white transition-colors">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Show a message box instead of using alert()
+        document.getElementById('contactBtn').addEventListener('click', function() {
+            document.getElementById('messageBox').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
